@@ -1,0 +1,12 @@
+{
+  "class": "players.rhea.RHEAParams",
+  "budgetType": "BUDGET_TIME",
+  "budget": 40,
+  "heuristic": {
+    "class": "groupB.SushiGoCustomHeuristic"
+  },
+  "populationSize": 10,
+  "individualLength": 10,
+  "mutationProbability": 0.1,
+  "crossoverType": "ONE_POINT"
+}
