@@ -6,5 +6,5 @@
   "seed": 42,
   "listener": "json/listeners/basiclistener.json",
   "destDir": "outputdir_huristic_eval",
-  "playerDirectory": "json/players/groupB"
+  "playerDirectory": "src/main/java/groupB/players"
 }
