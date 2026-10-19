@@ -1,64 +1,103 @@
+
 package groupB;
 
 import core.AbstractGameState;
-import core.interfaces.IStateHeuristic;
 import core.components.Counter;
+import core.interfaces.IStateHeuristic;
 import games.sushigo.SGGameState;
-import games.sushigo.cards.SGCard;
+import games.sushigo.SGParameters;
+import games.sushigo.cards.SGCard.SGCardType;
 
-@SuppressWarnings("unused")
 public class SushiGoCustomHeuristic implements IStateHeuristic {
 
     @Override
     public double evaluateState(AbstractGameState gs, int playerId) {
+
+        // Use the actual result when the game has ended.
+        if (!gs.isNotTerminal()) {
+            return gs.getPlayerResults()[playerId].value;
+        }
+
         SGGameState state = (SGGameState) gs;
 
+        // Calculate the average estimated score of the opponents.
+        double opponentTotal = 0.0;
+        int nPlayers = state.getNPlayers();
+
+        for (int p = 0; p < nPlayers; p++) {
+            if (p != playerId) {
+                opponentTotal += estimate(state, p);
+            }
+        }
+
+        double averageOpponent = nPlayers > 1
+                ? opponentTotal / (nPlayers - 1)
+                : 0.0;
+
+        // Return a normalised relative score.
+        return (estimate(state, playerId) - averageOpponent) / 50.0;
+    }
+
+    /**
+     * Estimates a player's current score plus potential points
+     * from incomplete sets and their current Maki lead.
+     */
+    private double estimate(SGGameState state, int playerId) {
+
+        SGParameters params =
+                (SGParameters) state.getGameParameters();
+
+        // Points already awarded by the framework.
         double score = state.getGameScore(playerId);
 
-        try {
-            // Dumpling (scale: 1=1, 2=3, 3=6, 4=10, 5+=15)
-            Counter dumplings = state.getPlayedCardTypes(
-                    SGCard.SGCardType.Dumpling, playerId
-            );
-            if (dumplings != null) {
-                score += dumplings.getValue() * 1.5;
-            }
+        // Estimate progress towards completing a Tempura pair.
+        int tempura = count(state, SGCardType.Tempura, playerId);
 
-            // Pudding (end game value
-            Counter puddings = state.getPlayedCardTypes(
-                    SGCard.SGCardType.Pudding, playerId
-            );
-            if (puddings != null) {
-                score += puddings.getValue() * 2.0;
-            }
-
-            Counter maki = state.getPlayedCardTypes(
-                    SGCard.SGCardType.Maki, playerId
-            );
-            if (maki != null) {
-                score += maki.getValue() * 1.0;
-            }
-
-            // Tempura (a set of 2 is worth 5 points
-            Counter tempura = state.getPlayedCardTypes(SGCard.SGCardType.Tempura, playerId);
-            if (tempura != null) {
-                int count = tempura.getValue();
-                int completeSets = count / 2;
-                int remainder = count % 2;
-                score += (completeSets * 5.0) + (remainder * 2.0);
-            }
-
-            // Sashimi (a set of 3 is worth 10 points)
-            Counter sashimi = state.getPlayedCardTypes(SGCard.SGCardType.Sashimi, playerId);
-            if (sashimi != null) {
-                int count = sashimi.getValue();
-                int completeSets = count / 3;
-                int remainder = count % 3;
-                score += (completeSets * 10.0) + (remainder * 3.0);
-            }
-        } catch (Exception e) {
-            // Error handling
+        if (tempura % 2 == 1) {
+            score += 0.5 * params.valueTempuraPair;
         }
+
+        // Estimate progress towards completing a Sashimi triple.
+        int sashimi = count(state, SGCardType.Sashimi, playerId) % 3;
+
+        if (sashimi == 1) {
+            score += 0.25 * params.valueSashimiTriple;
+        } else if (sashimi == 2) {
+            score += 0.5 * params.valueSashimiTriple;
+        }
+
+        // Estimate a discounted Maki bonus if currently leading.
+        int mine = count(state, SGCardType.Maki, playerId);
+        int tiedMost = 0;
+        int highest = 0;
+
+        for (int p = 0; p < state.getNPlayers(); p++) {
+            int maki = count(state, SGCardType.Maki, p);
+            highest = Math.max(highest, maki);
+        }
+
+        if (mine > 0 && mine == highest) {
+            for (int p = 0; p < state.getNPlayers(); p++) {
+                if (count(state, SGCardType.Maki, p) == highest) {
+                    tiedMost++;
+                }
+            }
+
+            if (tiedMost > 0) {
+                score += 0.5 * params.valueMakiMost / tiedMost;
+            }
+        }
+
         return score;
+    }
+    /**
+     * Returns the number of cards of a type played by a player.
+     * A missing counter is treated as zero.
+     */
+    private int count(SGGameState state, SGCardType type, int playerId) {
+
+        Counter counter = state.getPlayedCardTypes(type, playerId);
+
+        return counter == null ? 0 : counter.getValue();
     }
 }
