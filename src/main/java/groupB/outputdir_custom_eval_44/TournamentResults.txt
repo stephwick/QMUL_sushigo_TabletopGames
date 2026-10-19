@@ -1,0 +1,38 @@
+Game: SushiGo, Players: 3, Mode: EXHAUSTIVE, TotalGames: 480, GamesPerMatchup: 20
+bascirhea got 167.50 points. bascirhea won 35.2% of the 480 games of the tournament. bascirhea won 46.9% of the 360 games it played during the tournament.
+bascirhea got a mean score of 40.19.
+bascirhea won 38.3% of the 240 games against basicmcts.
+bascirhea won 46.7% of the 240 games against custom_basicmcts.
+bascirhea won 54.6% of the 240 games against custom_rhea.
+
+basicmcts got 103.50 points. basicmcts won 21.9% of the 480 games of the tournament. basicmcts won 29.2% of the 360 games it played during the tournament.
+basicmcts got a mean score of 35.90.
+basicmcts won 25.8% of the 240 games against bascirhea.
+basicmcts won 29.6% of the 240 games against custom_basicmcts.
+basicmcts won 30.8% of the 240 games against custom_rhea.
+
+custom_basicmcts got 130.00 points. custom_basicmcts won 27.3% of the 480 games of the tournament. custom_basicmcts won 36.4% of the 360 games it played during the tournament.
+custom_basicmcts got a mean score of 37.83.
+custom_basicmcts won 34.2% of the 240 games against bascirhea.
+custom_basicmcts won 42.5% of the 240 games against basicmcts.
+custom_basicmcts won 31.7% of the 240 games against custom_rhea.
+
+custom_rhea got 79.00 points. custom_rhea won 16.7% of the 480 games of the tournament. custom_rhea won 22.2% of the 360 games it played during the tournament.
+custom_rhea got a mean score of 36.15.
+custom_rhea won 20.0% of the 240 games against bascirhea.
+custom_rhea won 26.3% of the 240 games against basicmcts.
+custom_rhea won 19.6% of the 240 games against custom_basicmcts.
+
+---- Ranking ---- (+/- are standard errors on the mean calculated using a Normal approximation) 
+bascirhea: Win rate 0.47 +/- 0.026	Mean Ordinal 1.72 +/- 0.04
+custom_basicmcts: Win rate 0.36 +/- 0.025	Mean Ordinal 1.96 +/- 0.04
+basicmcts: Win rate 0.29 +/- 0.024	Mean Ordinal 2.12 +/- 0.04
+custom_rhea: Win rate 0.22 +/- 0.022	Mean Ordinal 2.16 +/- 0.04
+
+
+---- Alpha Rank ----  
+bascirhea: Alpha-rank by Win 0.61	Alpha-rank by Ordinal 0.90
+custom_basicmcts: Alpha-rank by Win 0.21	Alpha-rank by Ordinal 0.07
+basicmcts: Alpha-rank by Win 0.14	Alpha-rank by Ordinal 0.02
+custom_rhea: Alpha-rank by Win 0.04	Alpha-rank by Ordinal 0.00
+
