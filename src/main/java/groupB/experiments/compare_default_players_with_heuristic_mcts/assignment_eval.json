@@ -1,0 +1,10 @@
+{
+  "game": "SushiGo",
+  "nPlayers": 3,
+  "mode": "EXHAUSTIVE",
+  "matchups": 500,
+  "seed": 42,
+  "listener": "json/listeners/basiclistener.json",
+  "destDir": "src/main/java/groupB/experiments/compare_default_players_with_heuristic_mcts/output",
+  "playerDirectory": "src/main/java/groupB/experiments/compare_default_players_with_heuristic_mcts/players"
+}
