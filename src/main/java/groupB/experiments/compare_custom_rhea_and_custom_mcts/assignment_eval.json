@@ -1,0 +1,11 @@
+{
+  "game": "SushiGo",
+  "nPlayers": 2,
+  "mode": "RANDOM",
+  "matchups": 500,
+  "seed": 42,
+  "verbose": true,
+  "listener": "json/listeners/basiclistener.json",
+  "destDir": "src/main/java/groupB/experiments/compare_custom_rhea_and_custom_mcts/output",
+  "playerDirectory": "src/main/java/groupB/experiments/compare_custom_rhea_and_custom_mcts/players"
+}

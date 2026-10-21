@@ -1,0 +1,16 @@
+Game: SushiGo, Players: 2, Mode: RANDOM, TotalGames: 500, GamesPerMatchup: 500
+basicmcts_custom got 396.50 points. basicmcts_custom won 79.4% of the 500 games of the tournament. basicmcts_custom won 79.4% of the 500 games it played during the tournament.
+basicmcts_custom got a mean score of 49.22.
+basicmcts_custom won 79.2% of the 500 games against custom_rhea.
+
+custom_rhea got 103.50 points. custom_rhea won 20.8% of the 500 games of the tournament. custom_rhea won 20.8% of the 500 games it played during the tournament.
+custom_rhea got a mean score of 45.03.
+custom_rhea won 20.6% of the 500 games against basicmcts_custom.
+
+---- Ranking ---- (+/- are standard errors on the mean calculated using a Normal approximation) 
+basicmcts_custom: Win rate 0.79 +/- 0.018	Mean Ordinal 1.21 +/- 0.02
+custom_rhea: Win rate 0.21 +/- 0.018	Mean Ordinal 1.79 +/- 0.02
+
+
+---- Alpha Rank ----  
+
