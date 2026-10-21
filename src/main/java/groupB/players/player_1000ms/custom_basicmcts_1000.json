@@ -1,6 +1,9 @@
 {
   "class": "players.basicMCTS.BasicMCTSParams",
-  "budgetType": "BUDGET_FM_CALLS",
+  "K": 1.0,
+  "rolloutLength": 0,
+  "maxTreeDepth": 30,
+  "budgetType": "BUDGET_TIME",
   "budget": 1000,
   "heuristic": {
     "class": "groupB.SushiGoCustomHeuristic"

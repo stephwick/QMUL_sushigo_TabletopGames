@@ -3,7 +3,7 @@
   "nPlayers": 3,
   "mode": "EXHAUSTIVE",
   "matchups": 500,
-  "seed": 46,
+  "seed": 42,
   "listener": "json/listeners/basiclistener.json",
   "destDir": "src/main/java/groupB/outputdir_custom_eval_46",
   "playerDirectory": "src/main/java/groupB/players"
