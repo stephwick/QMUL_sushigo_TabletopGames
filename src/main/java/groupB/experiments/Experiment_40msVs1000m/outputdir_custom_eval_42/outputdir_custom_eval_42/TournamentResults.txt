@@ -1,0 +1,24 @@
+Game: SushiGo, Players: 3, Mode: EXHAUSTIVE, TotalGames: 96, GamesPerMatchup: 16
+basicmcts_1000 got 22.00 points. basicmcts_1000 won 22.9% of the 96 games of the tournament. basicmcts_1000 won 22.9% of the 96 games it played during the tournament.
+basicmcts_1000 got a mean score of 38.74.
+basicmcts_1000 won 22.9% of the 96 games against basicrhea_1000.
+basicmcts_1000 won 22.9% of the 96 games against custom_basicmcts_1000.
+
+basicrhea_1000 got 35.00 points. basicrhea_1000 won 36.5% of the 96 games of the tournament. basicrhea_1000 won 36.5% of the 96 games it played during the tournament.
+basicrhea_1000 got a mean score of 40.42.
+basicrhea_1000 won 36.5% of the 96 games against basicmcts_1000.
+basicrhea_1000 won 36.5% of the 96 games against custom_basicmcts_1000.
+
+custom_basicmcts_1000 got 39.00 points. custom_basicmcts_1000 won 40.6% of the 96 games of the tournament. custom_basicmcts_1000 won 40.6% of the 96 games it played during the tournament.
+custom_basicmcts_1000 got a mean score of 42.04.
+custom_basicmcts_1000 won 40.6% of the 96 games against basicmcts_1000.
+custom_basicmcts_1000 won 40.6% of the 96 games against basicrhea_1000.
+
+---- Ranking ---- (+/- are standard errors on the mean calculated using a Normal approximation) 
+custom_basicmcts_1000: Win rate 0.41 +/- 0.050	Mean Ordinal 1.89 +/- 0.08
+basicrhea_1000: Win rate 0.36 +/- 0.049	Mean Ordinal 1.91 +/- 0.08
+basicmcts_1000: Win rate 0.23 +/- 0.043	Mean Ordinal 2.21 +/- 0.08
+
+
+---- Alpha Rank ----  
+

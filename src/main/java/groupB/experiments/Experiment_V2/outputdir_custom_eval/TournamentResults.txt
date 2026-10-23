@@ -1,0 +1,38 @@
+Game: SushiGo, Players: 3, Mode: EXHAUSTIVE, TotalGames: 480, GamesPerMatchup: 20
+basicmcts got 110.00 points. basicmcts won 23.3% of the 480 games of the tournament. basicmcts won 31.1% of the 360 games it played during the tournament.
+basicmcts got a mean score of 37.96.
+basicmcts won 27.1% of the 240 games against basicrhea.
+basicmcts won 34.6% of the 240 games against custom_basicmcts.
+basicmcts won 30.0% of the 240 games against custom_rhea.
+
+basicrhea got 136.50 points. basicrhea won 28.8% of the 480 games of the tournament. basicrhea won 38.3% of the 360 games it played during the tournament.
+basicrhea got a mean score of 39.90.
+basicrhea won 33.3% of the 240 games against basicmcts.
+basicrhea won 37.1% of the 240 games against custom_basicmcts.
+basicrhea won 43.3% of the 240 games against custom_rhea.
+
+custom_basicmcts got 135.50 points. custom_basicmcts won 28.5% of the 480 games of the tournament. custom_basicmcts won 38.1% of the 360 games it played during the tournament.
+custom_basicmcts got a mean score of 39.03.
+custom_basicmcts won 43.8% of the 240 games against basicmcts.
+custom_basicmcts won 33.3% of the 240 games against basicrhea.
+custom_basicmcts won 35.8% of the 240 games against custom_rhea.
+
+custom_rhea got 98.00 points. custom_rhea won 20.8% of the 480 games of the tournament. custom_rhea won 27.8% of the 360 games it played during the tournament.
+custom_rhea got a mean score of 37.27.
+custom_rhea won 26.7% of the 240 games against basicmcts.
+custom_rhea won 33.3% of the 240 games against basicrhea.
+custom_rhea won 21.7% of the 240 games against custom_basicmcts.
+
+---- Ranking ---- (+/- are standard errors on the mean calculated using a Normal approximation) 
+basicrhea: Win rate 0.38 +/- 0.025	Mean Ordinal 1.86 +/- 0.04
+custom_basicmcts: Win rate 0.38 +/- 0.025	Mean Ordinal 1.95 +/- 0.04
+basicmcts: Win rate 0.31 +/- 0.024	Mean Ordinal 2.06 +/- 0.04
+custom_rhea: Win rate 0.27 +/- 0.023	Mean Ordinal 2.10 +/- 0.04
+
+
+---- Alpha Rank ----  
+basicrhea: Alpha-rank by Win 0.39	Alpha-rank by Ordinal 0.69
+custom_basicmcts: Alpha-rank by Win 0.33	Alpha-rank by Ordinal 0.18
+basicmcts: Alpha-rank by Win 0.17	Alpha-rank by Ordinal 0.06
+custom_rhea: Alpha-rank by Win 0.11	Alpha-rank by Ordinal 0.07
+
