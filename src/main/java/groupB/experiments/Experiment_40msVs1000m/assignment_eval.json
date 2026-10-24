@@ -5,6 +5,6 @@
   "matchups": 500,
   "seed": 42,
   "listener": "json/listeners/basiclistener.json",
-  "destDir": "src/main/java/groupB/outputdir_custom_eval_46",
+  "destDir": "src/main/java/groupB/experiments/Experiment_40msVs1000m/outputdir_40ms",
   "playerDirectory": "src/main/java/groupB/players"
 }

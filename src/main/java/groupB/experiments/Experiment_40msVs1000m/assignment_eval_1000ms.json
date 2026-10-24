@@ -3,9 +3,9 @@
     "game": "SushiGo",
     "nPlayers": 3,
     "mode": "EXHAUSTIVE",
-    "matchups": 100,
+    "matchups": 500,
     "seed": 42,
     "listener": "json/listeners/basiclistener.json",
-    "destDir": "src/main/java/groupB/outputdir/outputdir_custom_eval_45",
+    "destDir": "src/main/java/groupB/experiments/Experiment_40msVs1000m/outputdir_1000ms",
     "playerDirectory": "src/main/java/groupB/players/player_1000ms"
 }

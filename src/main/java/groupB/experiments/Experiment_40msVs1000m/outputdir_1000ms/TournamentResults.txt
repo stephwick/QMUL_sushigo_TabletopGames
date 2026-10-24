@@ -1,0 +1,38 @@
+Game: SushiGo, Players: 3, Mode: EXHAUSTIVE, TotalGames: 480, GamesPerMatchup: 20
+basicmcts_1000 got 66.50 points. basicmcts_1000 won 14.4% of the 480 games of the tournament. basicmcts_1000 won 19.2% of the 360 games it played during the tournament.
+basicmcts_1000 got a mean score of 37.69.
+basicmcts_1000 won 17.9% of the 240 games against basicrhea_1000.
+basicmcts_1000 won 20.4% of the 240 games against custom_basicmcts_1000.
+basicmcts_1000 won 17.1% of the 240 games against custom_rhea_1000ms.
+
+basicrhea_1000 got 98.50 points. basicrhea_1000 won 21.3% of the 480 games of the tournament. basicrhea_1000 won 28.3% of the 360 games it played during the tournament.
+basicrhea_1000 got a mean score of 38.91.
+basicrhea_1000 won 27.1% of the 240 games against basicmcts_1000.
+basicrhea_1000 won 24.6% of the 240 games against custom_basicmcts_1000.
+basicrhea_1000 won 30.4% of the 240 games against custom_rhea_1000ms.
+
+custom_basicmcts_1000 got 167.00 points. custom_basicmcts_1000 won 35.2% of the 480 games of the tournament. custom_basicmcts_1000 won 46.9% of the 360 games it played during the tournament.
+custom_basicmcts_1000 got a mean score of 41.55.
+custom_basicmcts_1000 won 55.8% of the 240 games against basicmcts_1000.
+custom_basicmcts_1000 won 42.5% of the 240 games against basicrhea_1000.
+custom_basicmcts_1000 won 40.8% of the 240 games against custom_rhea_1000ms.
+
+custom_rhea_1000ms got 148.00 points. custom_rhea_1000ms won 31.7% of the 480 games of the tournament. custom_rhea_1000ms won 42.2% of the 360 games it played during the tournament.
+custom_rhea_1000ms got a mean score of 40.46.
+custom_rhea_1000ms won 40.4% of the 240 games against basicmcts_1000.
+custom_rhea_1000ms won 47.9% of the 240 games against basicrhea_1000.
+custom_rhea_1000ms won 35.0% of the 240 games against custom_basicmcts_1000.
+
+---- Ranking ---- (+/- are standard errors on the mean calculated using a Normal approximation) 
+custom_basicmcts_1000: Win rate 0.46 +/- 0.026	Mean Ordinal 1.77 +/- 0.04
+custom_rhea_1000ms: Win rate 0.41 +/- 0.026	Mean Ordinal 1.83 +/- 0.04
+basicrhea_1000: Win rate 0.27 +/- 0.023	Mean Ordinal 2.08 +/- 0.04
+basicmcts_1000: Win rate 0.18 +/- 0.020	Mean Ordinal 2.28 +/- 0.04
+
+
+---- Alpha Rank ----  
+custom_basicmcts_1000: Alpha-rank by Win 0.57	Alpha-rank by Ordinal 0.66
+custom_rhea_1000ms: Alpha-rank by Win 0.33	Alpha-rank by Ordinal 0.32
+basicrhea_1000: Alpha-rank by Win 0.08	Alpha-rank by Ordinal 0.03
+basicmcts_1000: Alpha-rank by Win 0.02	Alpha-rank by Ordinal 0.00
+
