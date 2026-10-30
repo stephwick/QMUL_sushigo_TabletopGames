@@ -2,6 +2,9 @@
   "class": "players.basicMCTS.BasicMCTSParams",
   "budgetType": "BUDGET_FM_CALLS",
   "budget": 1000,
+  "K" : 1.0,
+  "rolloutLength" : 0,
+  "maxTreeDepth" : 30,
   "heuristic": {
     "class": "groupB.SushiGoCustomHeuristic"
   }
