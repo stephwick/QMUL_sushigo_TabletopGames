@@ -23,11 +23,11 @@ import games.sushigo.cards.SGCard.SGCardType;
 public class SushiGoCustomHeuristicV2 implements IStateHeuristic {
 
     // Switches for ablation (recompile to change).
-    private static final boolean USE_TIME_SCALING = true;
+    private static final boolean USE_TIME_SCALING = false;
     private static final boolean USE_MAKI_SECOND = true;
-    private static final boolean USE_WASABI = true;
-    private static final boolean USE_CHOPSTICKS = true;
-    private static final boolean USE_PUDDING = true;
+    private static final boolean USE_WASABI = false;
+    private static final boolean USE_CHOPSTICKS = false;
+    private static final boolean USE_PUDDING = false;
 
     // Rough chances / discounts (not tuned).
     private static final double MAKI_CONFIDENCE = 0.5;    // a Maki lead can still be lost this round

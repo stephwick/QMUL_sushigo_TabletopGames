@@ -4,7 +4,7 @@
   "budget": 1000,
   "K" : 1.0,
   "rolloutLength" : 0,
-  "maxTreeDepth" : 10,
+  "maxTreeDepth" : 30,
   "heuristic": {
     "class": "groupB.SushiGoCustomHeuristicV2"
   }
