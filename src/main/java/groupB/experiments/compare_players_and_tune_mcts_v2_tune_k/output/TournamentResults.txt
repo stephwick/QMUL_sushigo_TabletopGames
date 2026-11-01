@@ -1,0 +1,83 @@
+Game: SushiGo, Players: 3, Mode: EXHAUSTIVE, TotalGames: 420, GamesPerMatchup: 2
+basicmcts got 63.00 points. basicmcts won 15.2% of the 420 games of the tournament. basicmcts won 35.6% of the 180 games it played during the tournament.
+basicmcts got a mean score of 36.70.
+basicmcts won 40.0% of the 60 games against basicmcts_custom.
+basicmcts won 15.0% of the 60 games against basicmcts_custom_v2.
+basicmcts won 43.3% of the 60 games against osla.
+basicmcts won 45.0% of the 60 games against random.
+basicmcts won 28.3% of the 60 games against rhea.
+basicmcts won 38.3% of the 60 games against rmhc.
+
+basicmcts_custom got 81.50 points. basicmcts_custom won 19.8% of the 420 games of the tournament. basicmcts_custom won 46.1% of the 180 games it played during the tournament.
+basicmcts_custom got a mean score of 37.88.
+basicmcts_custom won 48.3% of the 60 games against basicmcts.
+basicmcts_custom won 31.7% of the 60 games against basicmcts_custom_v2.
+basicmcts_custom won 48.3% of the 60 games against osla.
+basicmcts_custom won 63.3% of the 60 games against random.
+basicmcts_custom won 28.3% of the 60 games against rhea.
+basicmcts_custom won 51.7% of the 60 games against rmhc.
+
+basicmcts_custom_v2 got 133.00 points. basicmcts_custom_v2 won 31.7% of the 420 games of the tournament. basicmcts_custom_v2 won 73.9% of the 180 games it played during the tournament.
+basicmcts_custom_v2 got a mean score of 41.32.
+basicmcts_custom_v2 won 70.0% of the 60 games against basicmcts.
+basicmcts_custom_v2 won 58.3% of the 60 games against basicmcts_custom.
+basicmcts_custom_v2 won 80.0% of the 60 games against osla.
+basicmcts_custom_v2 won 83.3% of the 60 games against random.
+basicmcts_custom_v2 won 65.0% of the 60 games against rhea.
+basicmcts_custom_v2 won 86.7% of the 60 games against rmhc.
+
+osla got 16.00 points. osla won 3.8% of the 420 games of the tournament. osla won 8.9% of the 180 games it played during the tournament.
+osla got a mean score of 29.18.
+osla won 8.3% of the 60 games against basicmcts.
+osla won 6.7% of the 60 games against basicmcts_custom.
+osla won 1.7% of the 60 games against basicmcts_custom_v2.
+osla won 18.3% of the 60 games against random.
+osla won 1.7% of the 60 games against rhea.
+osla won 16.7% of the 60 games against rmhc.
+
+random got 11.00 points. random won 2.6% of the 420 games of the tournament. random won 6.1% of the 180 games it played during the tournament.
+random got a mean score of 29.24.
+random won 6.7% of the 60 games against basicmcts.
+random won 3.3% of the 60 games against basicmcts_custom.
+random won 0.0% of the 60 games against basicmcts_custom_v2.
+random won 11.7% of the 60 games against osla.
+random won 3.3% of the 60 games against rhea.
+random won 11.7% of the 60 games against rmhc.
+
+rhea got 100.00 points. rhea won 24.0% of the 420 games of the tournament. rhea won 56.1% of the 180 games it played during the tournament.
+rhea got a mean score of 42.40.
+rhea won 50.0% of the 60 games against basicmcts.
+rhea won 46.7% of the 60 games against basicmcts_custom.
+rhea won 25.0% of the 60 games against basicmcts_custom_v2.
+rhea won 78.3% of the 60 games against osla.
+rhea won 65.0% of the 60 games against random.
+rhea won 68.3% of the 60 games against rmhc.
+
+rmhc got 15.50 points. rmhc won 3.8% of the 420 games of the tournament. rmhc won 8.9% of the 180 games it played during the tournament.
+rmhc got a mean score of 29.33.
+rmhc won 10.0% of the 60 games against basicmcts.
+rmhc won 8.3% of the 60 games against basicmcts_custom.
+rmhc won 5.0% of the 60 games against basicmcts_custom_v2.
+rmhc won 13.3% of the 60 games against osla.
+rmhc won 10.0% of the 60 games against random.
+rmhc won 5.0% of the 60 games against rhea.
+
+---- Ranking ---- (+/- are standard errors on the mean calculated using a Normal approximation) 
+basicmcts_custom_v2: Win rate 0.74 +/- 0.033	Mean Ordinal 1.29 +/- 0.04
+rhea: Win rate 0.56 +/- 0.037	Mean Ordinal 1.53 +/- 0.05
+basicmcts_custom: Win rate 0.45 +/- 0.037	Mean Ordinal 1.66 +/- 0.05
+basicmcts: Win rate 0.35 +/- 0.035	Mean Ordinal 1.89 +/- 0.06
+osla: Win rate 0.09 +/- 0.021	Mean Ordinal 2.51 +/- 0.05
+rmhc: Win rate 0.09 +/- 0.021	Mean Ordinal 2.51 +/- 0.05
+random: Win rate 0.06 +/- 0.018	Mean Ordinal 2.57 +/- 0.05
+
+
+---- Alpha Rank ----  
+basicmcts_custom_v2: Alpha-rank by Win 0.90	Alpha-rank by Ordinal 0.98
+basicmcts_custom: Alpha-rank by Win 0.06	Alpha-rank by Ordinal 0.02
+rhea: Alpha-rank by Win 0.03	Alpha-rank by Ordinal 0.01
+basicmcts: Alpha-rank by Win 0.00	Alpha-rank by Ordinal 0.00
+osla: Alpha-rank by Win 0.00	Alpha-rank by Ordinal 0.00
+rmhc: Alpha-rank by Win 0.00	Alpha-rank by Ordinal 0.00
+random: Alpha-rank by Win 0.00	Alpha-rank by Ordinal 0.00
+
