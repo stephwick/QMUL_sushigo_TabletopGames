@@ -1,0 +1,16 @@
+Game: SushiGo, Players: 2, Mode: EXHAUSTIVE, TotalGames: 5000, GamesPerMatchup: 2500
+basicmcts_v1 got 1878.00 points. basicmcts_v1 won 38.0% of the 5000 games of the tournament. basicmcts_v1 won 38.0% of the 5000 games it played during the tournament.
+basicmcts_v1 got a mean score of 45.97.
+basicmcts_v1 won 37.1% of the 5000 games against rhea_v2.
+
+rhea_v2 got 3122.00 points. rhea_v2 won 62.9% of the 5000 games of the tournament. rhea_v2 won 62.9% of the 5000 games it played during the tournament.
+rhea_v2 got a mean score of 48.56.
+rhea_v2 won 62.0% of the 5000 games against basicmcts_v1.
+
+---- Ranking ---- (+/- are standard errors on the mean calculated using a Normal approximation) 
+rhea_v2: Win rate 0.62 +/- 0.007	Mean Ordinal 1.37 +/- 0.01
+basicmcts_v1: Win rate 0.38 +/- 0.007	Mean Ordinal 1.62 +/- 0.01
+
+
+---- Alpha Rank ----  
+

@@ -1,0 +1,8 @@
+{
+  "class": "players.basicMCTS.BasicMCTSParams",
+  "budgetType": "BUDGET_FM_CALLS",
+  "budget": 1000,
+  "heuristic": {
+    "class": "groupB.SushiGoCustomHeuristic"
+  }
+}
