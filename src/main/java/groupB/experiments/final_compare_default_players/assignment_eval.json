@@ -1,0 +1,13 @@
+{
+  "game": "SushiGo",
+  "nPlayers": 3,
+  "mode": "EXHAUSTIVE",
+  "matchups": 1000,
+  "seed": 42,
+  "budgetType" : "BUDGET_TIME",
+  "budget" : 40,
+  "verbose" : true,
+  "listener": "json/listeners/basiclistener.json",
+  "destDir": "src/main/java/groupB/experiments/compare_default_players/output",
+  "playerDirectory": "src/main/java/groupB/experiments/compare_default_players/players"
+}

@@ -1,0 +1,16 @@
+Game: SushiGo, Players: 2, Mode: RANDOM, TotalGames: 1000, GamesPerMatchup: 1000
+basicmcts_custom got 523.00 points. basicmcts_custom won 52.5% of the 1000 games of the tournament. basicmcts_custom won 52.5% of the 1000 games it played during the tournament.
+basicmcts_custom got a mean score of 53.86.
+basicmcts_custom won 52.1% of the 1000 games against rhea.
+
+rhea got 477.00 points. rhea won 47.9% of the 1000 games of the tournament. rhea won 47.9% of the 1000 games it played during the tournament.
+rhea got a mean score of 53.84.
+rhea won 47.5% of the 1000 games against basicmcts_custom.
+
+---- Ranking ---- (+/- are standard errors on the mean calculated using a Normal approximation) 
+basicmcts_custom: Win rate 0.52 +/- 0.016	Mean Ordinal 1.48 +/- 0.02
+rhea: Win rate 0.48 +/- 0.016	Mean Ordinal 1.52 +/- 0.02
+
+
+---- Alpha Rank ----  
+

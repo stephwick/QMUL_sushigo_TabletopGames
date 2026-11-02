@@ -1,0 +1,13 @@
+{
+  "game": "SushiGo",
+  "nPlayers": 2,
+  "mode": "EXHAUSTIVE",
+  "matchups": 5000,
+  "seed": 42,
+  "budgetType" : "BUDGET_TIME",
+  "budget" : 40,
+  "verbose" : true,
+  "listener": "json/listeners/basiclistener.json",
+  "destDir": "src/main/java/groupB/experiments/two_by_two_mcts_v1_and_rhea_v2/output_5000",
+  "playerDirectory": "src/main/java/groupB/experiments/two_by_two_mcts_v1_and_rhea_v2/players"
+}
