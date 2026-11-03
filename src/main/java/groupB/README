@@ -1,0 +1,54 @@
+# Group B – Sushi Go! agent (ECS7032P Assignment 1)
+
+**Competition agent:** BasicMCTS with a custom state heuristic (V2), 900 ms per decision.
+**Config file:** `groupB/competition/agent/competition_agent.json`
+
+The agent is built on `players.basicMCTS` (not the advanced `players.mcts.MCTSPlayer`). It is standard BasicMCTS with UCT, using `groupB.SushiGoCustomHeuristicV2` as its state evaluation. The framework itself is not modified.
+
+## How to run the agent
+
+1. Copy the `groupB` package into `src/main/java/` of the TAG repository provided for the course.
+2. Open the project in IntelliJ IDEA 2026.2.3 with Oracle OpenJDK 27.
+3. Create a run configuration (Run > Edit Configurations > Application):
+   - Main class: `evaluation.RunGames`
+   - Program arguments:
+     `config=src/main/java/groupB/competition/assignment_eval_competition.json`
+   - Working directory: the repository root (the folder containing `src`)
+4. Apply and run. Results are written to the `destDir` set in the config
+   (`src/main/java/groupB/competition/output`).
+
+To use the agent in another setup, load `competition_agent.json` like any other TAG player JSON.
+
+## Agent parameters (`competition_agent.json`)
+
+| Parameter | Value |
+|---|---|
+| class | `players.basicMCTS.BasicMCTSParams` |
+| K (UCT exploration constant) | 1.0 |
+| rolloutLength | 0 (leaf states are scored directly by the heuristic) |
+| maxTreeDepth | 30 |
+| budgetType / budget | `BUDGET_TIME` / 900 ms |
+| heuristic | `groupB.SushiGoCustomHeuristicV2` |
+
+## Heuristics
+
+- **`SushiGoCustomHeuristic` (V1):** awarded score plus credit for unfinished Tempura and Sashimi sets and the current Maki lead. Each player is compared with the opponents' average, and the difference is divided by 50.
+- **`SushiGoCustomHeuristicV2`:** V1 plus credit for unused Wasabi and Chopsticks, second-place Maki, and Pudding, with time scaling that reduces credits as a round progresses. Switches at the top of the class turn each term on or off (all on for the competition).
+
+Both return the game's actual result at terminal states. The constants were set from the scoring rules and reasoning, not tuned.
+
+## Folder contents
+
+- `SushiGoCustomHeuristic.java`, `SushiGoCustomHeuristicV2.java`: the two heuristics.
+- `competition/`: the competition agent and its test setup.
+  - `agent/`: `competition_agent.json`, plus `basicMCTS_900.json` (plain BasicMCTS) and `rhea_v2_900.json` (RHEA with V2), all at 900 ms.
+  - `assignment_eval_competition.json`: tournament config (3 players, exhaustive seating, 12 games, seed 42).
+  - `output/`: the result of that run.
+- `players/`: plain and custom BasicMCTS and RHEA configs used in the experiments (40 ms; 1000 ms versions in `player_1000ms/`).
+- `experiments/`: configs and outputs for each experiment in the report, one folder per experiment.
+
+All paths are relative to the repository root. Everything needed to run the agent is inside `groupB`.
+
+## Competition test
+
+In a 12-game, 3-player test at 900 ms, the competition agent won 8 games, against 3 for RHEA with V2 and 1 for the plain BasicMCTS, and every game finished. With only 12 games this checks that the agent loads and runs; it is not evidence of playing strength. The comparisons in the report use larger tournaments.

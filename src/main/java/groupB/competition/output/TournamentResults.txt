@@ -1,0 +1,24 @@
+Game: SushiGo, Players: 3, Mode: EXHAUSTIVE, TotalGames: 12, GamesPerMatchup: 2
+basicMCTS_900 got 1.00 points. basicMCTS_900 won 8.3% of the 12 games of the tournament. basicMCTS_900 won 8.3% of the 12 games it played during the tournament.
+basicMCTS_900 got a mean score of 35.33.
+basicMCTS_900 won 8.3% of the 12 games against competition_agent.
+basicMCTS_900 won 8.3% of the 12 games against rhea_v2_900.
+
+competition_agent got 8.00 points. competition_agent won 66.7% of the 12 games of the tournament. competition_agent won 66.7% of the 12 games it played during the tournament.
+competition_agent got a mean score of 43.50.
+competition_agent won 66.7% of the 12 games against basicMCTS_900.
+competition_agent won 66.7% of the 12 games against rhea_v2_900.
+
+rhea_v2_900 got 3.00 points. rhea_v2_900 won 25.0% of the 12 games of the tournament. rhea_v2_900 won 25.0% of the 12 games it played during the tournament.
+rhea_v2_900 got a mean score of 35.25.
+rhea_v2_900 won 25.0% of the 12 games against basicMCTS_900.
+rhea_v2_900 won 25.0% of the 12 games against competition_agent.
+
+---- Ranking ---- (+/- are standard errors on the mean calculated using a Normal approximation) 
+competition_agent: Win rate 0.67 +/- 0.136	Mean Ordinal 1.33 +/- 0.14
+rhea_v2_900: Win rate 0.25 +/- 0.125	Mean Ordinal 2.42 +/- 0.25
+basicMCTS_900: Win rate 0.08 +/- 0.080	Mean Ordinal 2.25 +/- 0.17
+
+
+---- Alpha Rank ----  
+
