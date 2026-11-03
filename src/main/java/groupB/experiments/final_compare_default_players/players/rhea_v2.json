@@ -10,5 +10,8 @@
 	"tournamentSize" : 5,
 	"budgetType" : "BUDGET_TIME",
 	"budget" : 40,
-	"breakMS" : 0
+	"breakMS" : 0,
+	"heuristic": {
+		"class": "groupB.SushiGoCustomHeuristicV2"
+	}
 }
